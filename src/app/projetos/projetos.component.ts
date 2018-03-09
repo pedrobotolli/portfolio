@@ -16,10 +16,14 @@ export class ProjetosComponent implements OnInit {
   requisicao = false;
 
   ngOnInit() {
-    this.http.get('https://github.com/pedrobotolli?tab=repositories', {responseType:'text'}).subscribe(data => {
+    try {
+      this.http.get('https://github.com/pedrobotolli?tab=repositories', {responseType:'text'}).subscribe(data => {
       console.log(data);
       this.getProjetos(data);
     });
+    } catch (error) {
+      this.requisicao = false;
+    }
   }
 
   getProjetos(data: string) {
