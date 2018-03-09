@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: rgb(223, 223, 223);
+}
+
+
+.topo{
+    box-shadow: 0pt 1pt 2pt 0.05pt black
+}
+
+.meu-container{
+    width: 100%;
+}
+
+.icone{
+    font-size: 2em;
+    margin-left: 10pt;
+    margin-right: 10pt;
+    color: black;
+}
+
+
+.barra-superior{
+    display: block;
+    float: left;
+    width: 100%;
+    height: 180pt;
+    background-size: cover;
+    background-image: url('./assets/imgs/profile_banner.jpg');
+    background-color: grey;
+    border-bottom: white;
+}
+
+.img-perfil{
+    z-index: 2;
+    position: absolute;
+    margin-top: 100pt;
+    left: 0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    background-image: url('./assets/imgs/perfil.jpg');
+    background-size: cover;
+    background-position-y: -50pt;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #ffffff;
+    width: 125pt;
+    height: 125pt;
+}
+
