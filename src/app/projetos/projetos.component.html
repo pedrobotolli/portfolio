@@ -7,10 +7,42 @@
   </div>
   <br>
   <div class="row">
-    <div class="col-sm-4 offset-sm-4"> 
+    <div *ngIf="requisicao" class="col-sm-4 offset-sm-4"> 
       <ul>
         <li *ngFor='let item of tupla'><a href='{{item[1]}}'>{{item[0]}}</a></li>
       </ul>
+    </div>
+    <div *ngIf="!requisicao" class="col-sm-4 offset-sm-4"> 
+          <ul>
+            <li>
+              <a href="https://github.com/pedrobotolli/portfolio">
+                portfolio</a>
+            </li>
+            <li>
+              <a href="https://github.com/pedrobotolli/Angular-NETCore-Vazio">
+                Angular-NETCore-Vazio</a>
+            </li>
+            <li>
+              <a href="https://github.com/pedrobotolli/maladiretaphp">
+                maladiretaphp</a>
+            </li>
+            <li>
+              <a href="https://github.com/pedrobotolli/trabalho-haskell">
+                trabalho-haskell</a>
+            </li>
+            <li>
+              <a href="https://github.com/pedrobotolli/yesod-trab">
+                yesod-trab</a>
+            </li>
+            <li>
+              <a href="https://github.com/pedrobotolli/TCC">
+                TCC</a>
+            </li>
+            <li>
+              <a href="https://github.com/pedrobotolli/AulasHackaTruck">
+                AulasHackaTruck</a>
+            </li>
+          </ul>
     </div>
   </div>
 </div>

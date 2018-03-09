@@ -11,9 +11,9 @@ export class ProjetosComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   tupla;
-
   nomes = new Array();
   links = new Array();
+  requisicao = false;
 
   ngOnInit() {
     this.http.get('https://github.com/pedrobotolli?tab=repositories', {responseType:'text'}).subscribe(data => {
@@ -54,6 +54,7 @@ export class ProjetosComponent implements OnInit {
     this.tupla = tupla;
 
     console.log(proj);
+    this.requisicao = true;
   }
 
 
