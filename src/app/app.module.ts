@@ -11,8 +11,8 @@ import { ProjetosComponent } from './projetos/projetos.component';
 
 
 const APP_ROUTES: Routes = [
-  { path: '/portfolio/projetos', component: ProjetosComponent },
-  { path: '/portfolio/', component: HomeComponent}
+  { path: 'portfolio/projetos', component: ProjetosComponent },
+  { path: 'portfolio/', component: HomeComponent}
 ];
 
 @NgModule({
