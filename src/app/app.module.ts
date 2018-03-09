@@ -11,9 +11,9 @@ import { ProjetosComponent } from './projetos/projetos.component';
 
 
 const APP_ROUTES: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full'},
-  { path: '/projetos', component: ProjetosComponent },
-  { path: '/home', component: HomeComponent}
+  { path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: 'projetos', component: ProjetosComponent },
+  { path: 'home', component: HomeComponent}
 ];
 
 @NgModule({
